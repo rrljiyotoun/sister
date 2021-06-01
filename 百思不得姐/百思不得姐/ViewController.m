@@ -18,6 +18,7 @@
 	[super viewDidLoad];
 	NSLog(@"OSChina ");
 	NSLog(@"OSChina again");
+	NSLog(@"我杨庆是世界上最帅的男人");
 	// Do any additional setup after loading the view, typically from a nib.
 }
 
