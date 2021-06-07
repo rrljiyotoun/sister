@@ -16,9 +16,7 @@
 
 - (void)viewDidLoad {
 	[super viewDidLoad];
-	NSLog(@"OSChina ");
-	NSLog(@"OSChina again");
-	NSLog(@"我杨庆是世界上最帅的男人");
+	//删除全部改动的代码
 	// Do any additional setup after loading the view, typically from a nib.
 }
 
