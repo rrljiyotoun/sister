@@ -7,7 +7,7 @@
 //
 
 #import "AppDelegate.h"
-
+#import "XMGViewController.h"
 @interface AppDelegate ()
 
 @end
@@ -16,7 +16,16 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-	// Override point for customization after application launch.
+	
+	//初始化窗口
+	self.window=[[UIWindow alloc]initWithFrame:[UIScreen mainScreen].bounds];
+	
+	//设置窗口根控制器
+	self.window.rootViewController=[[XMGViewController alloc]init];
+	
+	//显示窗口
+	[self.window makeKeyAndVisible];
+	
 	return YES;
 }
 

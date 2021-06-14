@@ -9,10 +9,9 @@
 /* Begin PBXBuildFile section */
 		4D7C6A3E1E157835009C77E5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D7C6A3D1E157835009C77E5 /* main.m */; };
 		4D7C6A411E157835009C77E5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D7C6A401E157835009C77E5 /* AppDelegate.m */; };
-		4D7C6A441E157835009C77E5 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D7C6A431E157835009C77E5 /* ViewController.m */; };
-		4D7C6A471E157835009C77E5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4D7C6A451E157835009C77E5 /* Main.storyboard */; };
 		4D7C6A491E157835009C77E5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4D7C6A481E157835009C77E5 /* Assets.xcassets */; };
 		4D7C6A4C1E157835009C77E5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4D7C6A4A1E157835009C77E5 /* LaunchScreen.storyboard */; };
+		4D7C6A551E15812E009C77E5 /* XMGViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D7C6A541E15812E009C77E5 /* XMGViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,12 +19,11 @@
 		4D7C6A3D1E157835009C77E5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		4D7C6A3F1E157835009C77E5 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		4D7C6A401E157835009C77E5 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		4D7C6A421E157835009C77E5 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		4D7C6A431E157835009C77E5 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		4D7C6A461E157835009C77E5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4D7C6A481E157835009C77E5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4D7C6A4B1E157835009C77E5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4D7C6A4D1E157835009C77E5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4D7C6A531E15812E009C77E5 /* XMGViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMGViewController.h; sourceTree = "<group>"; };
+		4D7C6A541E15812E009C77E5 /* XMGViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMGViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,12 +58,8 @@
 			children = (
 				4D7C6A3F1E157835009C77E5 /* AppDelegate.h */,
 				4D7C6A401E157835009C77E5 /* AppDelegate.m */,
-				4D7C6A421E157835009C77E5 /* ViewController.h */,
-				4D7C6A431E157835009C77E5 /* ViewController.m */,
-				4D7C6A451E157835009C77E5 /* Main.storyboard */,
-				4D7C6A481E157835009C77E5 /* Assets.xcassets */,
-				4D7C6A4A1E157835009C77E5 /* LaunchScreen.storyboard */,
-				4D7C6A4D1E157835009C77E5 /* Info.plist */,
+				4D7C6A531E15812E009C77E5 /* XMGViewController.h */,
+				4D7C6A541E15812E009C77E5 /* XMGViewController.m */,
 				4D7C6A3C1E157835009C77E5 /* Supporting Files */,
 			);
 			path = "百思不得姐";
@@ -74,6 +68,9 @@
 		4D7C6A3C1E157835009C77E5 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				4D7C6A481E157835009C77E5 /* Assets.xcassets */,
+				4D7C6A4A1E157835009C77E5 /* LaunchScreen.storyboard */,
+				4D7C6A4D1E157835009C77E5 /* Info.plist */,
 				4D7C6A3D1E157835009C77E5 /* main.m */,
 			);
 			name = "Supporting Files";
@@ -105,6 +102,7 @@
 		4D7C6A311E157835009C77E5 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = XMG;
 				LastUpgradeCheck = 0810;
 				ORGANIZATIONNAME = "杨庆";
 				TargetAttributes = {
@@ -139,7 +137,6 @@
 			files = (
 				4D7C6A4C1E157835009C77E5 /* LaunchScreen.storyboard in Resources */,
 				4D7C6A491E157835009C77E5 /* Assets.xcassets in Resources */,
-				4D7C6A471E157835009C77E5 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -150,23 +147,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4D7C6A441E157835009C77E5 /* ViewController.m in Sources */,
 				4D7C6A411E157835009C77E5 /* AppDelegate.m in Sources */,
 				4D7C6A3E1E157835009C77E5 /* main.m in Sources */,
+				4D7C6A551E15812E009C77E5 /* XMGViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		4D7C6A451E157835009C77E5 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				4D7C6A461E157835009C77E5 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		4D7C6A4A1E157835009C77E5 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -272,7 +261,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = "百思不得姐/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.yq.-----";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -283,7 +274,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = "百思不得姐/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.yq.-----";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -309,6 +302,7 @@
 				4D7C6A521E157835009C77E5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
